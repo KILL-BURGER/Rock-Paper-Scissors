@@ -52,8 +52,9 @@
     }
 
     .main {
-        width: 100%;
+        width: 30%;
         display: block;
         text-align: center;
+        margin: 0 auto;
     }
 }
