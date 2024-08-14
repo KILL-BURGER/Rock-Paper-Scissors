@@ -28,7 +28,7 @@ export default class AppClass extends Component {
   }
 
   play = (userChoice) => {
-    let computerChoice = this.randomChoice();
+    const computerChoice = this.randomChoice();
     this.setState({
       userSelect: choice[userChoice],
       computerSelect: computerChoice,
@@ -49,9 +49,9 @@ export default class AppClass extends Component {
   };
 
   randomChoice = () => {
-    let itemArray = Object.keys(choice); // 객체의 키값만 뽑아서 배열로 반환
-    let randomItem = Math.floor(Math.random() * itemArray.length);
-    let final = itemArray[randomItem];
+    const itemArray = Object.keys(choice); // 객체의 키값만 뽑아서 배열로 반환
+    const randomItem = Math.floor(Math.random() * itemArray.length);
+    const final = itemArray[randomItem];
     return choice[final];
   };
 

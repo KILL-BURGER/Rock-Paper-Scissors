@@ -24,7 +24,7 @@ function App() {
 
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
-    let computerChoice = randomChoice();
+    const computerChoice = randomChoice();
     setComputerSelect(computerChoice);
     setResult(judgement(choice[userChoice], computerChoice));
   };
@@ -42,9 +42,9 @@ function App() {
   };
 
   const randomChoice = () => {
-    let itemArray = Object.keys(choice); // 객체의 키값만 뽑아서 배열로 반환
-    let randomItem = Math.floor(Math.random() * itemArray.length);
-    let final = itemArray[randomItem];
+    const itemArray = Object.keys(choice); // 객체의 키값만 뽑아서 배열로 반환
+    const randomItem = Math.floor(Math.random() * itemArray.length);
+    const final = itemArray[randomItem];
     return choice[final];
   };
 
