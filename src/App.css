@@ -1,39 +1,58 @@
 .box {
-  border: 5px solid black;
-  width: 500px;
-  margin: 5px;
-  text-align: center;
+    border: 5px solid black;
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
 }
 
 .item-img {
-  width: 400px;
+    width: 100%;
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .btn {
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 25px;
-  padding: 15px;
-  margin: 0 5px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 0 5px;
 }
 
 .btn:hover {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
 
 .win {
-  border: 5px solid green;
+    border: 5px solid green;
 }
 
 .lose {
-  border: 5px solid red;
+    border: 5px solid red;
+}
+
+.versus-box {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .versus-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
 }

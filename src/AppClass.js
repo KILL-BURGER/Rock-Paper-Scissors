@@ -57,13 +57,16 @@ export default class AppClass extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="main">
           <BoxClass
             title="You"
             item={this.state.userSelect}
             result={this.state.result}
           />
+          <div className="versus-box">
+            <h1>VS</h1>
+          </div>
           <BoxClass
             title="Computer"
             item={this.state.computerSelect}
