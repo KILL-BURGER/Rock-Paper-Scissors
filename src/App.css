@@ -39,15 +39,16 @@
 }
 
 .versus-box {
-    width: 150px;
+    width: 300px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 @media (max-width: 768px) {
     .versus-box {
         width: 100%;
         text-align: center;
+        margin: auto auto;
     }
 
     .main {

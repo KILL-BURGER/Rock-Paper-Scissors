@@ -9,12 +9,12 @@ export default class BoxClass extends Component {
     // 컴퓨터 입장에서 승부결과
     let result = "";
     if (this.props.title === "Computer" && this.props.result !== "") {
-      if (this.props.result === "WIN") {
-        result = "LOSE";
-      } else if (this.props.result === "LOSE") {
-        result = "WIN";
+      if (this.props.result === "WIN 😆") {
+        result = "LOSE 😩";
+      } else if (this.props.result === "LOSE 😩") {
+        result = "WIN 😆";
       } else {
-        result = "TIE";
+        result = "TIE 🔥";
       }
     } else {
       result = this.props.result;
@@ -31,7 +31,7 @@ export default class BoxClass extends Component {
           className="item-img"
           src={this.props.item && this.props.item.img}
         />
-        <h2>{result}</h2>
+        <h1>{result}</h1>
       </div>
     );
   }

@@ -38,13 +38,13 @@ export default class AppClass extends Component {
 
   judgement = (user, computer) => {
     if (user.name === computer.name) {
-      return "TIE";
+      return "TIE 🔥";
     } else if (user.name === "Rock") {
-      return computer.name === "Scissors" ? "WIN" : "LOSE";
+      return computer.name === "Scissors" ? "WIN 😆" : "LOSE 😩";
     } else if (user.name === "Scissors") {
-      return computer.name === "Paper" ? "WIN" : "LOSE";
+      return computer.name === "Paper" ? "WIN 😆" : "LOSE 😩";
     } else if (user.name === "Paper") {
-      return computer.name === "Rock" ? "WIN" : "LOSE";
+      return computer.name === "Rock" ? "WIN 😆" : "LOSE 😩";
     }
   };
 
