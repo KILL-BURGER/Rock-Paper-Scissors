@@ -23,7 +23,7 @@ export default class BoxClass extends Component {
     return (
       <div
         className={
-          result === "WIN" ? "box win" : result === "LOSE" ? "box lose" : "box"
+          result === "WIN 😆" ? "box win" : result === "LOSE 😩" ? "box lose" : "box"
         }
       >
         <h1>{this.props.title}</h1>
